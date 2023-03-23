@@ -49,7 +49,8 @@
                         <td>
                             <ul>
                 `;
-                for (j = 0; j < titles.children[i].children.length; j++) {
+                for (j = 0; j < titles.children[i].children.length; j++) 
+                {
                     // Retrive 1 Sub Child
                     txt += ` <li><h4>${titles.children[i].children[j].getAttribute('model')}</h4> `;
                     
@@ -62,9 +63,7 @@
                        </ul>`;
                     }
                     
-                }
-                txt += 
-                `
+                }txt += `
                             </ul>
                         </td>
                     </tr>
