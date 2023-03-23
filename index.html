@@ -30,7 +30,6 @@
         function createList(xml) {
             var i, j, k, xmlDoc, txt;
             
-
             xmlDoc = xml.responseXML; 
 
             txt = `
@@ -53,12 +52,12 @@
                         <td>
                             <ul>
                 `;
-
                 for (j = 0; j < titles.children[i].children.length; j++) {
                     // Retrive 1 Sub Child
                     txt += ` <li><h4>${titles.children[i].children[j].getAttribute('model')}</h4> `;
                     
-                    for (k = 0; k < titles.children[i].children[j].children.length; k++) {
+                    for (k = 0; k < titles.children[i].children[j].children.length; k++) 
+                    {
                        txt +=
                        `<ul>
                             <li>${titles.children[i].children[j].children[k].tagName} - ${titles.children[i].children[j].children[k].childNodes[0].nodeValue}</li>
@@ -73,11 +72,8 @@
                         </td>
                     </tr>
                 `;
-
-
                 document.getElementById("xmlConnections").innerHTML = txt;
-            }
-            
+            }          
 
     }
     </script>
