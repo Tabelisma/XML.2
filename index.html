@@ -7,7 +7,7 @@
     <title>Document</title>
     </head>
     <body>
-    <h2>Music Lesson:</h2>
+    <h2> Types of Bikes:</h2>
 
     <button type="button" onclick="loadXMLDoc()">Show</button>
     <hr>
@@ -39,11 +39,8 @@
                 </tr>
             `;
 
-            // Get ALl Child of Parent
             var titles = xmlDoc.getElementsByTagName('bikes')[0];
-            
-            
-            // Retrive Childrens
+        
             for (i = 0; i < titles.children.length; i++) {
 
                 txt += 
