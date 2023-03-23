@@ -11,9 +11,9 @@
     </bike>
     <bike type="Roadbike">
         <brand model="Bianchi OltreXr4">
-            <Upkit>ULTEGRA R8100 Series</Upkit>
-            <Brakeset>ULTEGRA R8100 Series</Brakeset>
-            <Crank>ULTEGRA R8100 Series</Crank>           
+            <Upkit>Ultegra R8100 Series</Upkit>
+            <Brakeset>Ultegra R8100 Series</Brakeset>
+            <Crank>Ultegra R8100 Series</Crank>           
         </brand>
     </bike>
     <bike type="Bmx">
