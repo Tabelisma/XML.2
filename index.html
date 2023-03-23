@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <h2>Music Lesson:</h2>
+
+    <button type="button" onclick="loadXMLDoc()">Show</button>
+    <hr>
+    <table id="xmlConnections" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
+        
+    </table>
+
+    <script>
+        function loadXMLDoc() 
+        {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    createList(this);
+                }
+            };
+            xmlhttp.open("GET", "bikes.xml", true);
+            xmlhttp.send();
+        }      
+        function createList(xml) {
+            var i, j, k, xmlDoc, txt;
+            
+
+            xmlDoc = xml.responseXML; 
+
+            txt = `
+                <tr>
+                    <th>Category</th>
+                    <th>Example</th>
+                </tr>
+            `;
+
+            // Get ALl Child of Parent
+            var titles = xmlDoc.getElementsByTagName('bikes')[0];
+            
+            
+            // Retrive Childrens
+            for (i = 0; i < titles.children.length; i++) {
+
+                txt += 
+                `   <tr>
+                        <td>${titles.children[i].getAttribute('type')}</td>
+                        <td>
+                            <ul>
+                `;
+
+                for (j = 0; j < titles.children[i].children.length; j++) {
+                    // Retrive 1 Sub Child
+                    txt += ` <li><h4>${titles.children[i].children[j].getAttribute('model')}</h4> `;
+                    
+                    for (k = 0; k < titles.children[i].children[j].children.length; k++) {
+                       txt +=
+                       `<ul>
+                            <li>${titles.children[i].children[j].children[k].tagName} - ${titles.children[i].children[j].children[k].childNodes[0].nodeValue}</li>
+
+                       </ul>`;
+                    }
+                    
+                }
+                txt += 
+                `
+                            </ul>
+                        </td>
+                    </tr>
+                `;
+
+
+                document.getElementById("xmlConnections").innerHTML = txt;
+            }
+            
+
+    }
+    </script>
+</body>
+</html>
