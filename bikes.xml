@@ -1,56 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bikes>
-    <bike type="Mountain bike">
-        <brand model="Trek marlin 8">
-            <Sram_Upkit>Sram Series</Sram_Upkit>
-            <Brakeset>Shimano MT200</Brakeset>
-            <Fork>RockShox Judy Silver</Fork>
-            <Wheel_Set>Bontrager Kove</Wheel_Set>
-            <Cockpit>Bontrager Alloy</Cockpit>
-        </brand>
-    </bike>
-    <bike type="Roadbike">
-        <brand model="Bianchi OltreXr4">
-            <Upkit>Ultegra R8100 Series</Upkit>
-            <Brakeset>Ultegra R8100 Series</Brakeset>
-            <Crank>Ultegra R8100 Series</Crank>           
-        </brand>
-    </bike>
-    <bike type="Bmx">
-        <brand model="Mongoose">
-            <FRAME>Mongoose full 4130 Chromoly>tapered headtube, removable brake mounts, and mid BB shell.</FRAME>
-            <Brakeset>Dia-Compe 990</Brakeset>
-            <Chain>HL1 Wide Half link Series &amp; Size 1/2"x1/8" | Compatibility : All single speed drivetrains</Chain>
-        </brand>
-    </bike>
-    <bike type="Fixie">
-        <brand model="tsunami SNM100">
-            <Frameset>TSUNAMI SNM100, Aluminium 6061, Matte</Frameset>
-            <Wheel_Set> Track pro 30 mm alloy double-wall rim, 700c (17T Fixed cog).</Wheel_Set>
-            <Chain>KMC Single speed,1/8″.</Chain>
-        </brand >
-    </bike>
-    <bike type="Fatbike">
-        <brand model="Specialized Fatboy">
-            <Frameset>Specialized M5 Aluminum fully butted w/ Smooth Welds, tapered head tube and seat tube, forged post-mount 160mm disc dropouts, internal routing, forged bottom bracket shell, 197x12mm rear thru-axle</Frameset>
-            <Handlebars>double-butted alloy, 9-degree backsweep, 5-degree upsweep, 15mm rise, 750mm width, 31.8mm</Handlebars>
-            <Stem>3D-forged alloy, 4-bolt, 7-degree rise</Stem>
-            <Grips>half-waffle, S/M: regular thickness, L/XL: XL thickness</Grips>
-            <Saddle>hollow Cr-Mo rails, 143mm</Saddle>
-            <SeatPost>forged alloy, 8mm offset, micro-adjust, 30.9mm</SeatPost>
-            <Seat_Binder>bolt-type, 34.9mm</Seat_Binder>
-            <Brakeset_Sram>SX Eagle</Brakeset_Sram>
-        </brand>
-    </bike>
-    <bike type="Gravel Bikes">
-        <brand model="Specialized Diverge">
-            <Frameset>Specialized Diverge FACT 8r carbon, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc</Frameset>
-            <Wheelset>Pathfinder Sport, 700x38mm</Wheelset>
-            <Handlebars>Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare</Handlebars>
-            <Stem>Future Stem, Comp</Stem>
-            <Saddle>Body Geometry Power Sport, steel rails</Saddle>
-            <SeatPost>Carbon, single-bolt, 27.2mm</SeatPost>
-            <Drivetrain>SRAM Apex, hydraulic, SRAM Apex 1, long cage, 11-speed, Sunrace, 11-speed, alloy spider, 11-42t, SRAM Apex 1x, 40T, Sram GXP, KMC X11 Extra Lightweight, 11-speed</Drivetrain>
-        </brand>
-    </bike> 
-</bikes>
+<Bikes>
+  <bikes id="mtb">
+      <Units>Mountain Bikes</Units>
+      <Brands>Trek</Brands>
+      <Models>Trek marlin 8</Models>
+      <Specification>
+        <Upkit>Sram Series Upkit</Upkit>
+        <Breakset>Shimano Mt200</Breakset>
+        <Fork>RockShox Judy Silver</Fork>
+        <Wheel_Set>Bontrager Kove</Wheel_Set>
+        <Cockpit>Bontrager Alloy</Cockpit>
+        <Crank>Sram Series</Crank>
+      </Specification> 
+  </bikes>
+  
+  <bikes id="rb">
+      <Units>Road bike</Units>
+      <Brands>Bianchi</Brands>
+      <Models>Bianchi OltreXr4</Models>
+      <Specification>
+        <Upkit>Ultegra R8100 Series Upkit</Upkit>
+        <Breakset>Ultegra R8100 Series Breakset</Breakset>
+        <Wheel_Set> Fulcrum Racing 400 disc brake, 622x19c, 2 WAY FIT tubeless ready</Wheel_Set>
+        <Stem>Reparto Corse by Vision Metron 5D ACR Disc Integrated Aero bar, Bar/stem Integrated, material UD Weave Carbon, drop 125mm, reach 80mm, Di2 compatible, RC'21 graphics, Ext: 100x400mm-47/50cm, 110x420mm-53/55cm, 120x420mm-57/59cm, 130x440mm-61cm.</Stem>
+        <Handlebars>Handlebarks include the Stem</Handlebars>
+        <Saddle>Saddle is Fi'zi:k Argo Vento R3, nylon carbon reinforced shell w/WingFlex, K:ium rails, 260x140mm</Saddle>
+      </Specification>
+  </bikes>
+
+  <bikes id="bmx">
+      <Units>Bmx</Units>
+      <Brands>Mongoose</Brands>
+      <Models>Legion L500</Models>
+      <Specification>
+        <Frameset>Frame is tapered headtube, removable brake mounts, and mid BB shell.</Frameset>
+        <Breakset>Breaks Dia-Compe 990</Breakset>
+        <Chain> Chain Half link Series.</Chain>
+        <SizeOfChain>Size chain 1/2"x1/8" | Compatibility : All single speed drivetrains</SizeOfChain>
+        <Tire> Tires 20” x 2.4” tires mounted on wide aluminum double wall 36H rims with 3/8” female axle front hub and 9T cog sealed bearing freecoaster rear hub.</Tire>
+        <Drivetrain>Drivetrain features 175 mm two-piece tubular chromoly hollow spindle cranks with a 25T aluminum chainring and mid sealed bearing bottom bracket. </Drivetrain>
+      </Specification>
+  </bikes>
+  
+  <bikes id="Fixed">
+      <Units>Fixie</Units>
+      <Brands>Tsunami</Brands>
+      <Models>Tsunami SNM100</Models>
+      <Specification>
+        <Frame>Frame Alumium alloy T6061.</Frame>
+        <Headset>Headset IS 41mm / 28.6mm.</Headset>
+        <Tire>Tire clearance Up to 700 x 25c</Tire>
+        <Weight>Weight Frame – 1550g (Size M), Fork  – 650g.</Weight>
+        <Hub>Hubs Front QR 100mm, Rear 120mm/ Stainless Steel Removable Plates.</Hub>
+        <Sizes>Sizes: S(49cm.), M(52cm.), L(55cm.), XL(58cm.) </Sizes>
+      </Specification>
+  </bikes>
+
+  <bikes id="Fat">
+      <Units>Fat bike</Units>
+      <Brands>Specialized</Brands>
+      <Models>Specialized Fatboy</Models>
+      <Specification>
+        <Frame>Frame fully butted w/ Smooth Welds, tapered head tube and seat tube, forged post-mount 160mm disc dropouts, internal routing, forged bottom bracket shell, 197x12mm rear thru-axle.</Frame>
+        <Upkit>Sram Series Upkit.</Upkit>
+        <Breaks>Breaks Sram Series</Breaks>
+        <Handlebars>Handle bars double-butted alloy, 9-degree backsweep, 5-degree upsweep, 15mm rise, 750mm width, 31.8mm.</Handlebars>
+        <Stem>Stem 3D-forged alloy, 4-bolt, 7-degree rise.</Stem>
+        <Grips>Grips half-waffle, S/M: regular thickness, L/XL: XL thickness.</Grips>
+      </Specification>
+  </bikes>
+  <bikes id="Gravel">
+      <Units>Gravel Bikes</Units>
+      <Brands>Specialized</Brands>
+      <Models>Specialized Diverge</Models>
+      <Specification>
+        <Frameset>Frames Specialized Diverge FACT 8r carbon, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc.</Frameset>
+        <Wheelset>Wheelset Pathfinder Sport, 700x38mm</Wheelset>
+        <Rear_Derailleur>SRAM Apex 1, long cage, 11-speed RD.</Rear_Derailleur>
+        <Crankset>Crank Sram Apex 1x.</Crankset>
+        <Cassette>Cassette Sunrace, 11-speed, alloy spider, 11-42t</Cassette>
+        <Handlebars>Handle bars Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare.</Handlebars>
+      </Specification>
+  </bikes>
+</Bikes>
